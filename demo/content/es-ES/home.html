@@ -1,0 +1,61 @@
+<h1>Demo Zentric</h1>
+
+<div class="content">
+
+	<p>
+		Este es el sitio demo de Zentric. Cada una de las opciones intenta
+		mostrar alguna característica del funcionamiento.  
+	</p>
+	<p>	
+		Por ello, todas las páginas cargan un bloque de información 
+		contextual referida al proceso que se ha ejecutado para componer 
+		la respuesta. Esta funcionalidad puede servir también a para
+		ayudar a depurar código durante el desarrollo.
+	</p>
+
+	<p class="box">		
+		Para mostrar/ocultar el panel con la información de contexto, pulsar
+		el pequeño icono de información <i class="fa fa-info-circle"></i> 
+		situado en el border derecho inferior de la página.		
+	</p>
+
+	<!--
+	<p>
+		Por eso, todas las páginas cargan un bloque con información
+		detallada sobre el proceso que se ha ejecutado para componer la 
+		respuesta. Esta información se obtiene a través de una llamada
+		al método <kbd>addInfo</kbd> de la clase <kbd>Util</kbd>, ubicada 
+		en el archivo <kbd>src/Util.php</kbd>. Por eso, todos los métodos 
+		incluyen el siguiente código:
+	</p>
+	-->
+
+	<!--code>Util::addInfo(__file__, __method__);</code-->
+
+	<p>
+		La información se muestra en un panel con 2 pestañas:
+	</p>
+
+	<dl>
+		<dt>Route</dd> 
+		<dd>
+			Muestra la configuración de la ruta actual
+			una vez se ha identificado y procesado.
+			<ul>
+			<li><kbd>app-template</kbd> => Plantilla usada para la respuesta.</li>
+			<li><kbd>class</kbd> => Clase o controlador.</li>
+			<li><kbd>method</kbd> => El método de la clase anterior que es 
+				llamado para componer la respuesta.</li>
+			<li><kbd>uri</kbd> => La uri recibida.</li>
+			<li><kbd>pattern</kbd> => El patrón identificado en el router.</li>
+			<li><kbd>params</kbd> => Lista de parámetros recibidos en la uri, si la hay.</li>				
+			</ul>
+		</dd>
+		<dt>Method</dd> 
+		<dd>
+			Muestra el código del método vinculado a la ruta que se 
+			ha ejecutado para componer y enviar la respuesta.
+		</dd>
+	</dl>
+
+</div>

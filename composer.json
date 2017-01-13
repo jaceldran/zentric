@@ -1,0 +1,10 @@
+{
+	"name": "Zentric",
+	"description": "Zentric PHP Framework",
+	"autoload": {
+		"psr-4": {
+			"Zentric\\": "vendor/zentric",
+			"App\\": ["demo", "demo/src"]
+		}			
+	}
+}

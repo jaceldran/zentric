@@ -1,0 +1,107 @@
+
+<style>
+	#panel-info-context {
+		background: transparent;		
+	}
+	.tabs-container {		
+		background-color: antiquewhite;
+		margin: 10% 5%;
+		border: 1px solid #ddd;
+		box-shadow: 0 0 5px #ccc;
+	}
+
+	.tabs-header {
+		background-color: white;
+		padding-left: 15px;
+	}
+
+	.tabs-header > a {
+		display: inline-block;				
+		padding: 0 15px;
+		line-height: 50px;
+		border: 1px solid #ddd;
+		border-width: 1px 1px 0 1px;
+		font-weight: bold;
+		font-size: 90%;
+		cursor: pointer;
+	}
+
+	.tabs-header > a.on {		
+		background: antiquewhite;
+		color: #111;
+		transform: translateY(1px);
+		line-height: 51px;
+	}
+
+	.tabs-header > a.off, .tabs-header > a.off > .fa {
+		background-color: #eee;
+		color: #ccc;
+	}
+	.tabs-header > button.window.close {
+		float: right;
+	}
+
+	.tab-content {
+		background: antiquewhite;
+		border: 1px solid #ddd;
+		overflow: auto;
+		max-height: 450px;
+		width: 100%;
+	}
+
+</style>
+
+<div id="panel-info-context" class="panel container top toggled-0">
+
+	<div class="tabs-container">
+
+		<section class="tabs-header">
+				<a class="on" id="route-toggler" data-target-id="info-route">
+					Route
+				</a>
+				<a class="off" id="code-toggler" data-target-id="info-method">
+					Method
+				</a>
+				<button id="close-tabs" class="window close toggler" 
+					data-status="1" data-target-id="panel-info-context"></button>
+		</section>
+
+		<section class="tab-content toggled-1" id="tab-route">
+			<p>
+				&nbsp;<i class="fa fa-info-circle"></i>
+				<mark><kbd>%uri%</kbd></mark>
+			</p>
+			%route%
+		</section>
+
+		<section class="tab-content toggled-0" id="tab-code">
+			<p>
+				&nbsp;<i class="fa fa-info-circle"></i>
+				<kbd><mark>%method%</mark></kbd>
+			</p>
+			%code%
+		</section>
+
+	</div>
+
+</div>	
+
+<script>
+	// yeah, a very very bad way of get things done	
+	var routeToggler = document.getElementById("route-toggler");
+	var codeToggler = document.getElementById("code-toggler");
+	var tabRoute = document.getElementById("tab-route");
+	var tabCode = document.getElementById("tab-code");
+	routeToggler.addEventListener("click", function(event){
+		this.className = "on";
+		codeToggler.className = "off";
+		tabRoute.className = "tab-content toggled-1";
+		tabCode.className = "tab-content toggled-0";
+	});
+	codeToggler.addEventListener("click", function(event){
+		this.className = "on";
+		routeToggler.className = "off";
+		tabRoute.className = "tab-content toggled-0";
+		tabCode.className = "tab-content toggled-1";
+	});	
+</script>
