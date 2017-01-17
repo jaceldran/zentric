@@ -2,7 +2,7 @@
 
 **IN PROGRESS**. This is a growing list of samples for core and component libraries.
 
-Everything is easier to understand with a working demo.
+It is always easier to understand with a working demo. http://cdn.zentric.es/zentric/demo.
 
 This folder  contains the sources for a full demo application with most of standar components which are clasified by subfolders:
 

@@ -63,9 +63,10 @@ class MyController
 	// [contact]
 	function contact()
 	{
-		// puts  some content in "main" buffer		
-		$this->app->response->add('<h1>'.$this->app->locale->say('contact').'</h1>');
-
+		// loads static content		
+		$this->app->response->add(
+			View::load(CONTENT.'/'.LANG.'/contact.html')
+		);
 		// puts info about code executed in "runinfo" buffer 
 		Util::addInfo(__file__, __method__);
 
