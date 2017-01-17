@@ -1,28 +1,23 @@
 <?php
 
-/*
+/**
  * app constants and  settings
  */
-
-require 'constants.php'; // constants
-
-$settings = array (
+require 'constants.php';
+$settings = array ( // args for Zentric\App
 	'router' => require 'router.php'
 	, 'locale' => require 'locale.php'
 	, 'navigation' => require 'navigation.php'
 );
 
-/*
- * autoload options
+/**
+ * using composer autoload
  */
+require '../vendor/autoload.php';
 
-
-// -- using composer
-
-require ROOT . '/vendor/autoload.php';
-
-// -- using custom
-
+/**
+ * using custom autoload
+ */
 /*spl_autoload_register(function($class) {
 	$folders = array(
 		'App' => __DIR__ . '/app', // <<== replace with app folder 

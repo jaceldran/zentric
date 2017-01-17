@@ -19,7 +19,7 @@ class Request
 		$this->routes = $router['routes'];
 		$this->uri =$_SERVER['REQUEST_METHOD']			
 			. ' '.substr($_SERVER['REQUEST_URI'], strlen($router['home']));
-		$this->route = $this->match();
+		$this->route = $this->match();		
 	}
 
 	/**
@@ -40,7 +40,6 @@ class Request
 			}
 			$route['pattern'] = $pattern;
 			$route['params'] = array();
-
 			// if uri match $pattern then there are no placeholders.
 			if ($this->uri===$pattern) {
 				return $route;

@@ -1,0 +1,4 @@
+[16-Jan-2017 14:48:32 Europe/Madrid] PHP Notice:  File not found '/locale/es-ES/routes.php' in /home/sonimate/sites/cdn.zentric.es/zentric/vendor/zentric/Locale.php on line 61
+[16-Jan-2017 14:48:32 Europe/Madrid] PHP Notice:  File not found '/locale/es-ES/common.php' in /home/sonimate/sites/cdn.zentric.es/zentric/vendor/zentric/Locale.php on line 61
+[16-Jan-2017 14:48:32 Europe/Madrid] PHP Warning:  include(/templates/app-default.php): failed to open stream: No such file or directory in /home/sonimate/sites/cdn.zentric.es/zentric/vendor/zentric/Response.php on line 37
+[16-Jan-2017 14:48:32 Europe/Madrid] PHP Warning:  include(): Failed opening '/templates/app-default.php' for inclusion (include_path='.:/home/sonimate/php:/opt/php7.0/lib/php') in /home/sonimate/sites/cdn.zentric.es/zentric/vendor/zentric/Response.php on line 37

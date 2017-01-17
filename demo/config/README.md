@@ -1,8 +1,8 @@
-# Config
+# Configuration
 
-This is the folder where all config files live.
+Folder `config` is where all configuration files live.
 
-Organize it however you want. My way is:
+Organize it however you want. My choice is:
 
 - **constants** Sets default lang, paths and urls.
 - **locale** Sets locale configuration and default common dictionaries.

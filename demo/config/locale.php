@@ -1,8 +1,7 @@
 <?php
-/*
+/**
  * Locale configuration
  */
-
 return array (
 	// path to folder locale
 	'path' => LOCALE

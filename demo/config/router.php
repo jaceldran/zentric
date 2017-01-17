@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Router configuration
  */
  return array (
@@ -7,15 +7,16 @@
 	 // home url
 	 'home' => HOME
 
-	 // default apply to all routes except if overwritten
+	 // default attrs apply to all routes except if overwritten
 	 , 'defaults' => array (
 		// default app-template used for html responses 
 		'app-template' => TEMPLATES.'/app-default.php'
-		// if you want a default controller 		
+		// if you want a default controller, declare "class" here 
+		// and "method" in desired routes.
 		, 'class' => 'App\MyController'
 	 )
 
-	 // routes registry  [<method>] <pattern> => <config>	 
+	 // routes registry  [<method>] <pattern> => <config[]>
 	 , 'routes' => array (
 
 		 // app

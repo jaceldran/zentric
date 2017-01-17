@@ -48,6 +48,9 @@ class App
 		} else {
 			//trigger_error('<h1>404 no encontrado</h1>');
 			$uri = $_SERVER['REQUEST_URI'];
+echo "NOT FOUND $uri";
+die;
+
 			$_SESSION['error-404'] = $uri;			
 			$this->response->redirect(
 				$this->settings['router']['home'] . '/error/404'

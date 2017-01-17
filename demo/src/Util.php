@@ -1,17 +1,14 @@
 <?php namespace App;
-
-/*
+/**
  * A lib with utilities for this demo site.
  */
 
 // uses
 use \Zentric\View as View;
-//use \Zentric\Navigation as Nav;
 
 class Util
 {
-
-	/*
+	/**
 	 * adds info about route and code executed
 	 */
 	static function addInfo($file, $method)
@@ -32,8 +29,13 @@ class Util
 		$app->response->add (implode('',$r), 'runinfo');
 	}
 
-	/*
-	 * Read a section of code
+	/**
+	 * Read a section of code.
+	 * Requires comments styled like ini file sections named same than method.
+	 * ```
+	 *		// [home]
+	 *		function home() {...}
+	 * ```
 	 */
 	static function getCode($file, $section)
 	{
@@ -44,10 +46,8 @@ class Util
 			, $content
 		);
 		$sections = View::parse_ini_sections($content);
-
 		$code = highlight_string ('<?php'.$sections[$section], true);
 		$code = str_replace('&lt;?php<br />&nbsp;&nbsp;','',$code);
-
 		return $code;
 	}
 

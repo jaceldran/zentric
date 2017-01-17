@@ -1,6 +1,6 @@
 <?php
-/*
- * Site navigation(s) config
+/**
+ * Site navigation(s) configuration
  */
 return array (	
 	'main' => array(
