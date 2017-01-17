@@ -3,13 +3,13 @@
  * App settings and start.
  * The files "index.php" and ".htaccess" configure the access point to apps.
  *
- * Both files can be located at root directory  so that app url 
- * is http://example.com instead of http://example.com/demo
+ * Both files can be located at root directory so that app url 
+ * is http://example.com instead of http://example.com/<app-folder>
  * 
  * But, also each app can be stored at one folder containing custom 
  * "index.php" and ".htaccess" so that access url is 
  * http://example.com/<app-folder>. This way, several apps can share the 
- * same installation of "vendor/zentric" core libraries.
+ * same installation of "vendor/zentric" core and component libraries.
  */ 
 
 // If folder is the access point for app(s) http://example.com/<app-folder>

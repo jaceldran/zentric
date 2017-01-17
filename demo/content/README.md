@@ -1,4 +1,4 @@
-# Content
+# content
 
 This is the folder where **static** content for pages live.
 

@@ -26,11 +26,11 @@ You can read and understand the core Zentric libraries in less than an hour.
 
 Everything is easier to understand with a working demo. 
 
-Sources for a full demo application with most of standar components which are clasified by subfolders:
+Folder "demo" contains the sources for a full demo application with most of standar components which are clasified by subfolders:
 
 - **config** all confguration files.
 - **content** static contents.
-- **locale** dictionary files for multilang suppor.
+- **locale** dictionary files for multilang support.
 - **src** application scripts like controllers, utilities, etc.
 - **templates** template files.
 
