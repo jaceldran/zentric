@@ -34,6 +34,8 @@ Folder "demo" contains the sources for a full demo application with most of stan
 - **src** application scripts like controllers, utilities, etc.
 - **templates** template files.
 
+Visit demo at http://cdn.zentric.es/zentric/demo
+
 ## Composer configuration
 
 The installation structure is intended to be compatible with composer configurations altough, by now, zentric is only available by download, not by packagist site.

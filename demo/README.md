@@ -11,3 +11,5 @@ This folder  contains the sources for a full demo application with most of stand
 - **locale** dictionary files for multilang support.
 - **src** application scripts like controllers, utilities, etc.
 - **templates** template files.
+
+Visit demo at http://cdn.zentric.es/zentric/demo
